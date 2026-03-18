@@ -1,0 +1,24 @@
+stock_symbol: AAPL
+
+prediction:
+  horizon_days: 5
+
+data_paths:
+  prices: data/raw/prices/
+  news: data/raw/news/
+  fundamentals: data/raw/fundamentals/
+  features: data/features/
+  processed: data/processed/
+
+news:
+  rss_url: https://news.google.com/rss/search?q=AAPL
+
+models:
+  logistic:
+    enabled: true
+
+  xgboost:
+    enabled: true
+
+  lstm:
+    enabled: false
