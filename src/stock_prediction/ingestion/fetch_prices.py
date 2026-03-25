@@ -41,7 +41,7 @@ def fetch_prices()-> Path:
         df = source.fetch_history()
 
     #Save dataset
-    tmp_file = output_file.with_suffix(".tmp")
+    tmp_file = output_file.parent / f"{output_file.stem}_tmp.parquet"
     df.to_parquet(tmp_file, index=False)
     tmp_file.replace(output_file)
 
