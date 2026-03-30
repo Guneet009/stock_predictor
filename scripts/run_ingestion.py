@@ -1,11 +1,6 @@
 from stock_prediction.ingestion.fetch_prices import fetch_prices
 from stock_prediction.ingestion.fetch_news import fetch_news
 
-# def main():
-#     output_file = fetch_prices()
-
-#     print(f"Date saved to {output_file}")
-
 def main():
 
     output_price = fetch_prices()
